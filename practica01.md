@@ -348,5 +348,5 @@ COPY libros TO '/tmp/libros.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
 b. Importar datos adicionales de autores desde un archivo CSV externo.
 
 ```text
-COPY autores FROM '/tmp/nuevos_autores.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
+COPY autores(nombre, nacionalidad) FROM '/tmp/nuevos_autores.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
 ```
